@@ -1,16 +1,22 @@
 import Background from '../assets/images/car-bg.jpg'
+import DataTable from '../components/DataTable'
 
 
 function Dashboard() {
   return (
     <div 
-      style={{ backgroundImage: `url(${ Background })`}} 
-      className='flex flex-row justify-center bg-cover bg-fixed opacity-50 blur-sm'
-      >
-        <div className='flex place-items-center h-screen'>
-          <h3 className='text-white'>Car Dashboard</h3> { /*placeholder*/ }
-        </div>
-    </div>
+    style={{ 
+        backgroundImage: `url(${Background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        height: '92vh',
+    }} 
+    className='flex flex-row justify-center opacity-50'
+>
+    <DataTable />
+</div>
+
   )
 }
 
